@@ -1,7 +1,7 @@
 ---
 title: 'Assignment Analysis of Algorithms'
 author: 'COSC 2336: Data Structures and Algorithms'
-date: 'Fall 2021'
+date: 'Spring 2024'
 ---
 
 \newcommand{\BigO}[1]{$\mathcal{O}(#1)$}
@@ -68,7 +68,7 @@ using and adding code to for this assignment.
 
 | File Name                      | Description                                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------------|
-| `src/test-algorithms.cpp`      | Unit tests and performance tests of the Fibonacci algorithm implementations                 |
+| `src/assg06-tests.cpp`      | Unit tests and performance tests of the Fibonacci algorithm implementations                 |
 | `include/libfibonacci.hpp`     | Header file for function declarations of the Fibonacci algorithms                           |
 | `src/libfibonacci.cpp`         | Implementation file for the algorithm implementations of the various Fibonacci calculations |
 
@@ -87,12 +87,12 @@ you have completed the following setup steps.
    assignment invitation link for 'Assignment Recursion' for our
    current class semester and section.
 2. Clone the repository using the SSH url to your local class DevBox
-   development environment.
-3. Configure the project by running the `configure` script from a terminal.
-4. Confirm that the project builds and runs, though no tests will be
+   development environment. Make sure to open the cloned
+   folder and restart inside of the correct Dev Container.
+3. Confirm that the project builds and runs, though no tests will be
    defined or run initially.  If the project does not build on the first
    checkout, please inform the instructor.
-5. You should create the issue for Task 1 and/or for all tasks for the assignment
+4. You should create the issue for Task 1 and/or for all tasks for the assignment
    now before beginning the first task.  On your GitHub account, go to issues,
    and create it/them from the issue templates for the assignment. Also make sure
    you link the issues with the `Feedback` pull request.
@@ -109,7 +109,7 @@ performance.
 In addition to creating the 4 different algorithmic implementations, you will
 also measure the performance of the functions.  You will look at the
 actual wall-clock-time each takes to perform its calculations, as well as
-counting operaitons of your implementations as one does to compare
+counting operations of your implementations as one does to compare
 algorithmic complexity.
 
 ## Task 1: Implement Linear Fibonacci Algorithm
@@ -139,7 +139,7 @@ will write for this assignment have identical signatures, they take an
 `int` result from the function.
 
 The best approach for both the linear and recursive implementations
-has some similarity.  For the linear (and recursive) algorith, start by
+has some similarity.  For the linear (and recursive) algorithm, start by
 handling the special initial conditions.  When $n = 0$ return `0` and
 when $n = 1$ return `1`.  Or alternatively when $n <= 1$ return `n`, though
 these two different tests have different results for error conditions. However
@@ -170,13 +170,13 @@ $n^{th}$ Fibonacci number of the sequence.  For example when $n = 2$, the loop
 will execute only a single time, and will calculate $n$ from the initial values of
 $n-1$ and $n-2$ you gave to the local variables.  If $n = 3$ then the loop
 executes 2 times, and you will calculate and shift down the values in the
-first iteration so that on the second iteration you can calcualte $F_3$.
+first iteration so that on the second iteration you can calculate $F_3$.
 
 Once your linear implementation is working and passing the tests, commit your
-changes and push them to your class GitHub repository with an approriate
+changes and push them to your class GitHub repository with an appropriate
 commit message.
 
-## Task 2: Implement Recusrive Fibonacci Algorithm
+## Task 2: Implement Recursive Fibonacci Algorithm
 
 Make sure you have created Issue 2 for this task and linked
 it with the `Feedback` pull request before beginning.
@@ -200,10 +200,10 @@ return that as the result of your recursive implementation.
 As we will discuss in class, this recursive implementation requires
 approximately exponential time to perform its work, because it is very
 inefficient compared to the linear implementation.  In fact, if you
-write out the recursion tree of this funciton, you will see that many
+write out the recursion tree of this function, you will see that many
 values are calculated many times repeatedly of the Fibonacci numbers
 just to get a final result.  In fact the recursion requires about
-$\varphi^n$ function calls to be performed, where $\varphi$ (greek phi symbol)
+$\varphi^n$ function calls to be performed, where $\varphi$ (Greek phi symbol)
 is the golden ratio (read the links above for more information).  In fact this can
 take so much time that you will find your tests to calculate Fibonacci
 numbers of $n >= 40$ will be noticeably slow, and they have been commented
@@ -233,9 +233,9 @@ empirical measurements of elapsed time.  Taking an average of a number
 of runs will tend to lessen the impacts of extraneous system events
 that might have undue large impacts on a single run of the algorithm.
 You should note that the linear algorithm runs in nanoseconds, and the time
-it takes will be imperceptable to a person, but the recursive
+it takes will be imperceptible to a person, but the recursive
 algorithm will take 100's of millions of nanoseconds, where a nanosecond is
-a billioneth ($10^{-9}$) of a second.  So typically on my system it takes
+a billionth ($10^{-9}$) of a second.  So typically on my system it takes
 close to a second to run 1 calculation of $F_{40}$, though your time
 will vary depending on your system capabilities.
 
@@ -279,7 +279,7 @@ computation.  So you can easily add in this count by simply incrementing
 `operationCount` by ` each time your function is called.
 
 If you implemented your recursive function as described, you should get
-exactly the same numbre of calls of your function as is expected in the
+exactly the same number of calls of your function as is expected in the
 test.  The total number of times the recursive function will be called is
 related to $\varphi^n$ as described, because Fibonacci numbers are deeply related
 to the golden ratio $\varphi$.  The expression for the `expectedOperationCount`
@@ -298,7 +298,7 @@ repository.
 
 Perform the usual prerequisite steps before starting task 4.
 
-For task 4 you will create a constat time implementat of the
+For task 4 you will create a constant time implementation of the
 Fibonacci computation.  As before, you will create a function
 named `fibonacciConstant()` for this task that takes the
 same input parameter and returns the same result as the

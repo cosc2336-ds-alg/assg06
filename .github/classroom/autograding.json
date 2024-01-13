@@ -2,13 +2,13 @@
   "tests": [
     {
       "name": "test successfully builds",
-      "setup": "./configure",
+      "setup": "make clean",
       "run": "make",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 25
     },
     {
       "name": "task 1 test linear fibonacci calculations",
@@ -18,7 +18,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 25
     },
     {
       "name": "task 2 test recursive fibonacci calculations",
@@ -28,7 +28,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     },
     {
       "name": "task 3 empirical test of linear and recursive performance",
@@ -38,7 +38,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     },
     {
       "name": "task 4 test constant fibonacci calculations",
@@ -48,7 +48,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     },
     {
       "name": "task 5 test memoization fibonacci calculations",
@@ -58,7 +58,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     },
     {
       "name": "task 6 empirical test of constant and memoization performance",
@@ -68,7 +68,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 15
+      "points": 10
     }
   ]
 }
