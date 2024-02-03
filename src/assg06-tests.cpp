@@ -34,10 +34,17 @@ extern double PHI;
 /// libfibonacci.cpp implementation file
 extern int operationCount;
 
+#undef task1
+#undef task2
+#undef task3
+#undef task4
+#undef task5
+#undef task6
+
 
 /** Task 1: implement linear Fibonacci calculation
  */
-/*
+#ifdef task1
 TEST_CASE("<fibonacciLinear> test linear fibonacci calculations", "[task1]")
 {
   // test base cases are correct
@@ -71,11 +78,11 @@ TEST_CASE("<fibonacciLinear> test linear fibonacci calculations", "[task1]")
   // integers because result is too big to fit into 32 bit signed int
   CHECK_FALSE(fibonacciLinear(47) == 2971215073);
 }
-*/
+#endif
 
 /** Task 2: implement recursive fibonacci calculation
  */
-/*
+#ifdef task2
 TEST_CASE("<fibonacciRecursive> test recursive fibonacci calculations", "[task2]")
 {
   // test base cases are correct
@@ -113,12 +120,12 @@ TEST_CASE("<fibonacciRecursive> test recursive fibonacci calculations", "[task2]
   // integers because result is too big to fit into 32 bit signed int
   //CHECK_FALSE(fibonacciRecursive(47) == 2971215073);
 }
-*/
+#endif
 
 /** Task 3: empirical timing tests of wall clock compute time needed
  * for the linear and recursive versions.
  */
-/*
+#ifdef task3
 TEST_CASE("<fibonacci algorithms> empirical test of linear and recursive performance", "[task3]")
 {
   const int NUM_TEST_ITERATIONS = 5;
@@ -155,12 +162,12 @@ TEST_CASE("<fibonacci algorithms> empirical test of linear and recursive perform
        << fixed << averageElapsedTime << " ns" << endl;
   CHECK(result == 102334155);
 }
-*/
+#endif
 
 /** Task 3: computational complexity, count number of operations in each
  *    separate implementation
  */
-/*
+#ifdef task3
 TEST_CASE("<fibonacci algorithms> operation counts of linear and recursive algorithms", "[task3]")
 {
   // count operations in linear implementation
@@ -195,11 +202,11 @@ TEST_CASE("<fibonacci algorithms> operation counts of linear and recursive algor
   CHECK(operationCount == expectedOperationCount);
   CHECK(result == 102334155);
 }
-*/
+#endif
 
 /** Task 4: implement constant fibonacci calculation
  */
-/*
+#ifdef task4
 TEST_CASE("<fibonacciConstant> test constant fibonacci calculations", "[task4]")
 {
   // test base cases are correct
@@ -237,11 +244,11 @@ TEST_CASE("<fibonacciConstant> test constant fibonacci calculations", "[task4]")
   // integers because result is too big to fit into 32 bit signed int
   CHECK_FALSE(fibonacciConstant(47) == 2971215073);
 }
-*/
+#endif
 
 /** Task 5: implement memoization fibonacci calculation
  */
-/*
+#ifdef task5
 TEST_CASE("<fibonacciMemoization> test memoization fibonacci calculations", "[task5]")
 {
   // memoization technique needs to ensure memoization table is initialized before
@@ -283,12 +290,12 @@ TEST_CASE("<fibonacciMemoization> test memoization fibonacci calculations", "[ta
   // integers because result is too big to fit into 32 bit signed int
   CHECK_FALSE(fibonacciMemoization(47) == 2971215073);
 }
-*/
+#endif
 
 /** Task 6: empirical timing tests of wall clock compute time needed
  * for the constant and memoization versions.
  */
-/*
+#ifdef task6
 TEST_CASE("<fibonacci algorithms> empirical test of performance second set", "[task6]")
 {
   const int NUM_TEST_ITERATIONS = 5;
@@ -329,12 +336,12 @@ TEST_CASE("<fibonacci algorithms> empirical test of performance second set", "[t
        << fixed << averageElapsedTime << " ns" << endl;
   CHECK(result == 102334155);
 }
-*/
+#endif
 
 /** Task 6: computational complexity, count number of operations in each
  *    separate implementation
  */
-/*
+#ifdef task6
 TEST_CASE("<fibonacci algorithms> operation counts of algorithms second set", "[task6]")
 {
   // count operations in const implementation
@@ -366,5 +373,4 @@ TEST_CASE("<fibonacci algorithms> operation counts of algorithms second set", "[
   CHECK(operationCount == expectedOperationCount);
   CHECK(result == 102334155);
 }
-*/
-
+#endif
