@@ -26,13 +26,13 @@ to compute the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_numb
 The $n^{th}$ Fibonacci number is computed as the sum of the previous two
 Fibonacci numbers, given initial conditions:
 
-\begin{equation}
+$$
 \begin{split}
 F_0 &= 0 \\
 F_1 &= 1 \\
 F_n &= F_{n-1} + F_{n-2}
 \end{split}
-\end{equation}
+$$
 
 This defines the following sequence:
 
