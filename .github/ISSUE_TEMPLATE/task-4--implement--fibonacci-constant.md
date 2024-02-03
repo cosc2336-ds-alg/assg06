@@ -18,13 +18,13 @@ calculate and return the nth Fibonacci number.
 
 Use Binet's formula for the calculation:
 
-\begin{equation}
+$$
 F_n = 
 \begin{bmatrix}
 \frac{\varphi^n}{\sqrt{5}}
 \end{bmatrix}
 , n \ge 0
-\end{equation}
+$$
 
 **Note**: here the symbol $[ ]$ is being used as special notation to
 mean to round the value to the nearest whole integer.  The fraction

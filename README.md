@@ -22,7 +22,7 @@ date: 'Spring 2024'
 In this assignment we will explore some more aspects of algorithmic complexity
 and the practical analysis of code that implements an algorithm to perform
 some task or function.  This week you will be implementing several algorithms
-to compute the \href{https://en.wikipedia.org/wiki/Fibonacci_number}{Fibonacci Sequence}.
+to compute the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number).
 The $n^{th}$ Fibonacci number is computed as the sum of the previous two
 Fibonacci numbers, given initial conditions:
 
@@ -45,7 +45,7 @@ and the $10^{th}$ Fibonacci number is 55.  In this assignment you will be writin
 several regular C functions to compute and return the $n^{th}$ Fibonacci number of the
 Fibonacci sequence.  You will implement constant time, linear time and exponential
 time algorithms of this calculation, and will also use a technique known as
-\href{https://en.wikipedia.org/wiki/Memoization}{memoization} to perform the
+[memoization](https://en.wikipedia.org/wiki/Memoization) to perform the
 Fibonacci calculation.  You will then investigate
 and compare the performance of these different algorithmic implementations.
 
@@ -276,7 +276,7 @@ For the recursive algorithm, to simplify things a bit and make the counts
 more understandable, lets simply attempt to count the number of times that
 the `fibonacciRecursive()` function is called when performing a
 computation.  So you can easily add in this count by simply incrementing
-`operationCount` by ` each time your function is called.
+`operationCount` each time your function is called.
 
 If you implemented your recursive function as described, you should get
 exactly the same number of calls of your function as is expected in the
@@ -305,7 +305,7 @@ same input parameter and returns the same result as the
 previous two versions.
 
 If you read down a bit in the
-\href{https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression}{Fibonacci Numbers}
+[Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression)
 article about the closed-form expression of the Fibonacci
 computation, Binet's formula is discussed.  This gives
 an exact equation, or a closed-form expression, to calculate
@@ -316,13 +316,13 @@ wish to compute.
 
 Binet's formula closed-form expression is as follows:
 
-\begin{equation}
+$$
 F_n = 
 \begin{bmatrix}
 \frac{\varphi^n}{\sqrt{5}}
 \end{bmatrix}
 , n \ge 0
-\end{equation}
+$$
 
 **Note**: here the symbol $[ ]$ is being used as special notation to
 mean to round the value to the nearest whole integer.  The fraction
@@ -350,7 +350,7 @@ the usual steps to commit and push your work document to the
 
 In the final task where you have to implement a new function, we
 will introduce you to a technique known as 
-\href{https://en.wikipedia.org/wiki/Memoization}{memoization},
+[memoization](https://en.wikipedia.org/wiki/Memoization),
 also some times simply called tabling. This is kind of
 a fancy name for what is conceptually a rather simple
 technique.  The basic idea is that we want to have a look up table

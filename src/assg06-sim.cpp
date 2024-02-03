@@ -4,7 +4,7 @@
  *   Algorithms
  *
  * @author Derek Harter
- * @note   class: COSC 2336, Fall 2021
+ * @note   class: COSC 2336, Spring 2024
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Sorting and Searching
  * @date   October 1, 2021

@@ -5,7 +5,7 @@
  *   varying time complexities.
  *
  * @author Derek Harter
- * @note   class: COSC 2336, Summer 2021
+ * @note   class: COSC 2336, Spring 2024
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Analysis of Algorithms
  * @date   October 1, 2021

@@ -9,7 +9,7 @@ assignees: ''
 
 **Description**
 
-In task 5 you are to implement the Fibonacci computation using the describe memoization technique.  This technique builds a lookup table of the Fibonacci calculated results as needed when called.  The table and function to intialize it have been given for you to use in this task.
+In task 5 you are to implement the Fibonacci computation using the describe memoization technique.  This technique builds a lookup table of the Fibonacci calculated results as needed when called.  The table and function to initialize it have been given for you to use in this task.
 
 **Suggested Solution**
 

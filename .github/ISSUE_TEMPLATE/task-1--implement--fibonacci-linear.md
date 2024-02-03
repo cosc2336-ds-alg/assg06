@@ -13,7 +13,6 @@ Implement a O(n) linear time algorithm to compute the nth Fibonacci number as de
 in the assignment.  Your linear implementation should use a loop to calculate 
 Fibonacci numbers for n >= 2 and should perform in linear time.
 
-
 **Suggested Solution**
 
 Treat the initial conditions F_0 = 0 and F_1 = 1 as special cases and use a condition statement to detect and just directly return the computation for these initial conditions.
