@@ -36,9 +36,9 @@ $$
 
 This defines the following sequence:
 
-\begin{equation}
+$$
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
-\end{equation}
+$$
 
 For example, the $0^{th}$ Fibonacci number is 0, the $1^{st}$ Fibonacci number is 1
 and the $10^{th}$ Fibonacci number is 55.  In this assignment you will be writing
